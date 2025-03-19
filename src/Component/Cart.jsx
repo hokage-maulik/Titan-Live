@@ -146,7 +146,7 @@ export default function Cart() {
 
   const fetchCart = () => {
     axios
-      .get(`http://localhost:9000/cart/get`)
+      .get(`https://titan-backend-zro7.onrender.com/cart/get`)
       .then((res) => {
         console.log(res.data);
         setCart(res.data);
@@ -158,14 +158,14 @@ export default function Cart() {
 
   const incrementQuantity = (id) => {
     axios
-      .patch(`http://localhost:9000/cart/increment/${id}`)
+      .patch(`https://titan-backend-zro7.onrender.com/cart/increment/${id}`)
       .then(() => fetchCart())
       .catch((err) => console.error("Error incrementing quantity:", err));
   };
 
   const decrementQuantity = (id) => {
     axios
-      .patch(`http://localhost:9000/cart/decrement/${id}`)
+      .patch(`https://titan-backend-zro7.onrender.com/cart/decrement/${id}`)
       .then(() => fetchCart())
       .catch((err) => console.error("Error decrementing quantity:", err));
   };
