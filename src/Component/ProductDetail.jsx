@@ -118,7 +118,7 @@ export default function ProductDetail() {
   const handelAddtocart = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:9000/cart/add`, {
+      const response = await axios.post(`https://titan-backend-zro7.onrender.com/cart/add`, {
         productId: productDetail._id,
         quantity: 1,
         price: productDetail.price,
