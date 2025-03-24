@@ -196,8 +196,8 @@ export default function Cart() {
             {cart.map((el) => (
               <div className="cart-item" key={el._id}>
                 <img
-                  src={el.productId.image || "default-image.jpg"}
-                  alt={el.productId.name || "Product"}
+                  src={el.productId.image}
+                  alt={el.productId.name}
                   className="cart-item-image"
                 />
                 <div className="cart-item-details">

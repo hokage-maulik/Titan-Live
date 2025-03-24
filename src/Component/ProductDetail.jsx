@@ -124,7 +124,7 @@ export default function ProductDetail() {
         price: productDetail.price,
       });
       console.log(response.data);
-      navigate('/cart');
+      navigate('/Cart');
     } catch (err) {
       console.log(err);
     }

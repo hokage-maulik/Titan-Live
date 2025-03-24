@@ -1,9 +1,7 @@
-/* Optional: Ensure the carousel controls do not overlap the image */
-.carousel-control-prev, .carousel-control-next {
-    z-index: 10; /* Makes sure the controls stay above the images */
+/* .carousel-control-prev, .carousel-control-next {
+    z-index: 10; 
   }
   
-  /* Optional: Adjust carousel indicator button size on smaller screens */
   @media (max-width: 767px) {
     .carousel-indicators button {
       width: 20px;
@@ -11,7 +9,6 @@
     }
   }
   
-  /* Optional: Increase the size of the carousel indicators on larger screens */
   @media (min-width: 768px) {
     .carousel-indicators button {
       width: 30px;
@@ -19,3 +16,50 @@
     }
   }
   
+
+   */
+
+   /* Section1.css */
+
+/* Ensure carousel images are responsive */
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add some padding around the carousel for smaller screens */
+.carousel {
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+  }
+
+  /* Optionally adjust controls size on smaller screens */
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+  }
+
+  .carousel-indicators button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}

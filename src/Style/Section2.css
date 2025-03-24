@@ -1,0 +1,29 @@
+
+  @media (max-width: 768px) {
+    .carousel-item {
+      flex-direction: column;
+    }
+  
+    .category-item {
+      flex-basis: 100%;
+    }
+  
+    .category-item h3 {
+      font-size: 1rem;
+    }
+  
+    .category-item img {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .category-item img {
+      max-width: 200px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
