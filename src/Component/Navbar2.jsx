@@ -23,11 +23,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../Style/Navbar2.css";
+// import "../Style/Navbar2.css";
 
 export default function Navbar2() {
   return (
-    <div className="navbar-container">
+    <div className="navbar2-container">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <button 
