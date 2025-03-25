@@ -95,7 +95,7 @@
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import {  useNavigate, useParams } from 'react-router-dom';
 import "../Style/ProductDetail.css";
 
 export default function ProductDetail() {
@@ -124,7 +124,7 @@ export default function ProductDetail() {
         price: productDetail.price,
       });
       console.log(response.data);
-      navigate('/Cart');
+      navigate('/cart');
     } catch (err) {
       console.log(err);
     }

@@ -75,7 +75,7 @@ function App() {
 
 
 
-        <Route path='/Cart' element={<Cart/>}/>
+        <Route path='/cart' element={<Cart/>}/>
         <Route path='/payment' element={<Payment/>}/>
         <Route path='/Lastpage'element={<Lastpage/>}/>
 
